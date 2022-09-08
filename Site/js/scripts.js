@@ -1,8 +1,10 @@
 var paragrafos = document.getElementsByTagName('p')
-var body = document.getElementById('corpo')
-var div_tom_dif = document.getElementById('tom_dif')
+var links = document.getElementsByTagName('a')
+var cor_p = document.getElementById('cor_p')
+var cor_s = document.getElementById('cor_s')
+var cor_t = document.getElementById('cor_t')
 
-console.log(paragrafos)
+console.log(main)
 
 p_size = 1.2
 
@@ -20,15 +22,17 @@ function diminuir(){
     }
 }
 
-function tema_escuro(){
+function tema_claro(){
 
-    //body.classList.add('bg-dark')
-    body.style.background = '#white'
-    div_tom_dif.style.background = '#1D2A35'
+    cor_p.style.background = 'white'
+    cor_s.style.background = 'white'
+    cor_t.style.background = 'white'
 
     for(p of paragrafos){
-        p.style.color = 'white'
+        p.style.color = 'black'
     }
-    
+    for(a of links){
+        a.style.color = 'black'
+    }
     
 }
