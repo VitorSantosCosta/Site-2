@@ -2,7 +2,7 @@ var paragrafos = document.getElementsByTagName('p')
 var body = document.getElementById('corpo')
 var div_tom_dif = document.getElementById('tom_dif')
 
-console.log(body)
+console.log(paragrafos)
 
 p_size = 1.2
 
