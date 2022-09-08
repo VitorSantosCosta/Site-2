@@ -2,7 +2,7 @@
 var h1 = document.getElementsByTagName('h1')
 var h2 = document.getElementsByTagName('h2')
 var h4 = document.getElementsByTagName('h3')*/
-var texto_claro = getElementById('texto_claro')
+var texto_claro = document.getElementById('texto_claro')
 var links = document.getElementsByTagName('a')
 var cor_p = document.getElementById('cor_p')
 var cor_s = document.getElementById('cor_s')
@@ -31,12 +31,13 @@ function tema_claro(){
     cor_p.style.background = 'white'
     cor_s.style.background = 'white'
     cor_t.style.background = 'white'
-
+    texto_claro.style.background = 'black'
+    /*
     for(p of paragrafos){
         p.style.color = 'black'
     }
     for(a of links){
         a.style.color = 'black'
     }
-    
+    */
 }
