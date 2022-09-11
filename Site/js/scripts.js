@@ -15,18 +15,23 @@ var a_azul = document.getElementsByName('a_azul')
 console.log(links)
 
 function aumentar(){
-    p_size += 0.25
-    for(p of paragrafos){
-        p.style.fontSize = p_size + 'em'; 
+    if (!(p_size > 1.35)) {
+        p_size += 0.15
+        for(p of paragrafos){
+            p.style.fontSize = p_size + 'em'; 
+        }
     }
 }
 
 function diminuir(){
-    p_size -= 0.25
-    for(p of paragrafos){
-        p.style.fontSize = p_size + 'em'; 
+    if (p_size > 1){
+        p_size -= 0.15
+        for(p of paragrafos){
+            p.style.fontSize = p_size + 'em'; 
+        }
     }
 }
+    
 
 function tema_claro(){
 
